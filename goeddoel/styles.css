@@ -1,0 +1,833 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: white;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.logo {
+  background-color: rgb(253, 125, 54);
+  color: #fff;
+  padding: 6px 18px;
+  border-radius: 10px;
+  border: 10px solid rgb(253, 125, 54);
+  font-size: 24px;
+  font-weight: bold;
+  transform: translateY(-20px);
+}
+
+.zwarte-lijn {
+  border: none;
+  height: 2px;
+  background-color: black;
+  width: 100%;
+  margin-top: -40px;
+}
+
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 35px;
+  padding: 0;
+  margin: 0;
+  margin-top: -30px;
+  align-items: center;
+}
+
+
+
+.navbar li a {
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+}
+
+.navbar .donate {
+  background-color: rgb(253, 125, 54);
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 30px;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px, 60px;
+    width: 100%;
+    max-height: 550px;
+    flex-direction: row-reverse;
+}
+
+.hero h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-left: -20px;
+  max-width: 500px;
+
+  line-height: 1;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: black;
+}
+
+.herotext {
+    max-width: 650px;
+    font-size: 20px;
+    line-height: 1.5;
+    color: black;
+    margin-left: -50px;
+}
+
+.hero-p {
+  font-size: 20px;
+  max-width: 500px; 
+  color: #B3B3B3;
+}
+
+.hero-label {
+  font-size: 15px;
+  font-weight: bold;
+  color: #33B5D7;
+  margin-left: 7px;
+  margin-top: 50px;
+}
+
+.aapfoto {
+  height: auto;
+  width: 450px;
+  margin-left: 100px;
+  margin-top: 50px;
+}
+ 
+.knoppies {
+  display: flex;
+  gap: 30px;
+}
+
+.knoppies button {
+  border: 2px solid rgb(253, 125, 54);
+  border-radius: 30px;
+  background-color: rgb(253, 125, 54);
+  padding: 12px 24px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.missie {
+    padding: 80px 60px;
+    background-color: #fff;
+}
+
+.missie-label {
+    color: #33B5D7;
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 3px;
+}
+
+.missie h2 {
+    font-size: 60px;
+    max-width: 700px;
+    margin-bottom: 30px;
+}
+
+.missie-tekst {
+    max-width: 650px;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #B3B3B3;
+}
+
+.kaarten-container {
+    display: flex;
+    gap: 30px;
+    margin-top: 80px;
+}
+
+.kaart {
+    background-color: #e48745;
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1;
+}
+
+.kaart h3 {
+    font-size: 40px;
+    margin: 0;
+    color: #fff;
+}
+
+.kaart p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #B3B3B3;
+}
+
+.support-section {
+    padding: 20px 20px;
+    background-color: #fff;
+}
+
+.support-content {
+    max-width: 1100px;
+    max-height: 400px;
+    margin: 0 auto;
+    background-color: #33B5D7;
+    border-radius: 40px;
+    padding: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.support-text {
+    flex: 1;
+    margin-left: -45px;
+    color: white;
+}
+
+.support-label {
+    display: inline-block;
+    margin-bottom: 25px;
+    color: #e38541;
+    font-weight: 700;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.support-text h2 {
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 30px;
+    max-width: 700px;
+}
+
+.support-text p {
+    font-size: 20px;
+    line-height: 1.5;
+    max-width: 700px;
+}
+
+.donation-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 30px;
+    width: 500px;
+    margin-right: -35px;
+}
+
+.donation-card h3 {
+    font-size: 25px;
+    margin-bottom: 30px;
+    color: #000;
+}
+
+.amount-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 40px;
+}
+
+.amount-buttons button {
+    border: none;
+    background: #F7F3E8;
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+    cursor: pointer;
+}
+
+.help-button {
+    background: #e38541;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    padding: 12px 10px;
+}
+
+.samenwerkingen {
+    background-color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0;
+}
+
+.samenwerkingen h2 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 70px;
+}
+
+.samenwerkingen-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    margin-bottom: 60px;
+}
+
+.samenwerking {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.samenwerking p {
+    font-size: 20px;
+    line-height: 1.7;
+    margin-bottom: 40px;
+    max-width: 350px;
+    max-height:200px;
+}
+
+.samenwerking img {
+    max-width: 220px;
+    height: auto;
+}
+
+.button-samenwerkingen {
+    display: inline-block;
+    background-color: #e78b4c;
+    color: #fff;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: 700;
+    padding: 20px 40px;
+    border-radius: 12px;
+}
+
+.nieuws {
+    background-image: url("img/jarrod-head.png");
+    background-size: cover;
+    background-position: center;
+    min-height: 700px;
+
+    padding: 50px;
+    position: relative;
+}
+
+.nieuws h2 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 80px;
+}
+
+.nieuws-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nieuws-kaart {
+    max-width: 600px;
+    background: #33B5D7;
+    padding: 40px;
+    border-radius: 30px;
+}
+
+.nieuws-kaart h3 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.nieuws-kaart p {
+    font-size: 20px;
+    line-height: 0.5;
+}
+
+.lees-meer {
+    display: inline-block;
+    margin-top: 20px;
+    color: blue;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.reviews {
+    padding: 80px 50px;
+    background: #fff;
+}
+
+.reviews-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.reviews-label {
+    color: #33B5D7;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.reviews-header h2 {
+    font-size: 50px;
+    max-width: 900px;
+    line-height: 1.1;
+}
+
+.review-button {
+    background: #33B5D7;
+    color: white;
+    text-decoration: none;
+    padding: 20px 35px;
+    border-radius: 40px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.review-filters {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+
+.review-filters button {
+    padding: 12px 24px;
+    border-radius: 30px;
+    border: 1px solid #cfcfcf;
+    background: white;
+    cursor: pointer;
+}
+
+.review-cards {
+    display: flex;
+    gap: 30px;
+}
+
+.review-card {
+    background: white;
+    padding: 30px;
+    border-radius: 25px;
+    width: 550px;
+    min-height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.05);
+}
+
+.verified {
+    display: inline-block;
+    background: #E8F7F8;
+    padding: 8px 15px;
+    max-width: fit-content;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.review-text {
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 80px;
+    line-height: 1.4;
+    color: #000;
+}
+
+.review-person {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.review-person img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.review-person h4 {
+    margin: 0;
+}
+
+.review-person p {
+    margin: 5px 0 0;
+    color: #000;
+}
+
+.projecten {
+    padding: 60px 50px;
+    background: #fff;
+}
+
+.projecten-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.label {
+    color: #6ab8df;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.projecten-header h2 {
+    font-size: 50px;
+    max-width: 650px;
+    line-height: 1.1;
+    color: #000;
+}
+
+.btn-projecten {
+    background: #33B5D7;
+    color: white;
+    text-decoration: none;
+    padding: 18px 35px;
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+.projecten-grid {
+    display: flex;
+    gap: 30px;
+}
+
+.project-card {
+    background: white;
+    border-radius: 30px;
+    overflow: hidden;
+    max-height: 500px;
+    max-width: 550px;
+    flex: 1;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.project-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-content span {
+    color: #33B5D7;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.card-content h3 {
+    margin: 7px 0;
+    font-size: 24px;
+    color: #000;
+}
+
+.card-content p {
+    color: #B3B3B3;
+    line-height: 1.6;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.card-content a {
+    color: #6ab8df;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/*volgende sectie baka*/
+.diensten {
+    padding: 60px 50px;
+    background: #fff;
+}
+
+.diensten-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.label {
+    color: #33B5D7;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.diensten-header h2 {
+    font-size: 45px;
+    max-width: 750px;
+    margin: 20px 0px 0px 0px;
+    line-height: 1.1;
+    color: #000;
+}
+
+.diensten-p {
+  font-size: 20px;
+  max-width: 800px; 
+  color: #B3B3B3;
+}
+
+.btn-diensten {
+    background: #33B5D7;
+    color: white;
+    text-decoration: none;
+    padding: 18px 35px;
+    margin-top: 160px;
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+.diensten-grid {
+    display: flex;
+    margin-top: 40px;
+    gap: 30px;
+}
+
+.diensten-card {
+    background: white;
+    border-radius: 30px;
+    overflow: hidden;
+    max-height: 425px;
+    max-width: 500px;
+    flex: 1;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.diensten-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-content span {
+    color: #33B5D7;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.card-content h3 {
+    margin: 7px 0;
+    font-size: 24px;
+    color: #000;
+}
+
+.card-content p {
+    color: #B3B3B3;
+    line-height: 1.6;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.card-content a {
+    color: #33B5D7;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    padding: 40px 50px;
+    background-color: #fff;
+}
+
+.contact-left {
+    flex: 1;
+}
+
+.contact-label {
+    color: #33B5D7;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.contact-left h2 {
+    font-size: 50px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.contact-image {
+    width: 100%;
+    max-width: 700px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.contact-form {
+    width: 400px;
+    height: 500px;
+    background: white;
+    padding: 30px;
+    margin-top: 80px;
+    border: 2px solid #c3c3c3;
+    border-radius: 10px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    margin-top: 20px;
+}
+
+.invoegen {
+    width: 100%;
+    height: 35px;
+    background: white;
+    border: 1px solid #d5d5d5;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.contact-form p {
+    margin: 8px;
+}
+
+.textarea {
+    width: 100%;
+    height: 70px;
+    background: #fff;
+    border: 1px solid #c3c3c3;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.verstuur {
+    background: #000;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+.footer {
+    background-color: #000;
+    color: white;
+    padding:30px 50px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    padding-bottom: 20px;
+    border-bottom: 0.5px solid #4b4848;
+}
+
+.footer-info {
+    max-width: 350px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 0px;
+}
+
+.logo-circle {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(253, 125, 54);
+    border-radius: 50%;
+}
+
+.footer-logo h2 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.footer-info p {
+    line-height: 1.5;
+}
+
+.contact-info {
+    margin-top: 0px;
+}
+
+.contact-info p {
+    margin-top: 5px;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-col p {
+    margin-bottom: 5px;
+}
+
+.footer-col h3 {
+    color: rgb(253, 125, 54);
+    margin-bottom: 0px;
+    font-size: 15px;
+}
+
+.footer-col a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+.footer-col a:hover {
+    color: rgb(253, 125, 54);
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
