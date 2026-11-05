@@ -91,7 +91,6 @@ header {
     height: 900px;
     overflow: hidden;
     
-    
     background-image: url("img/tweede\ achtergrond.png");
     background-size: cover;
     background-position: center;
@@ -435,3 +434,13 @@ header {
     margin-top: 50px;
 }
 
+.box-front {
+    position: absolute;
+    right: 240px;
+    bottom: 130px;
+
+    width: 500px;
+    height: 200px;
+    border-radius: 15px;
+    background-color: #737272;
+}
