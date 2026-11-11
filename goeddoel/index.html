@@ -28,9 +28,14 @@
 <hr class="zwarte-lijn">
 
 <section class="hero">
-    <div> 
-        <img class="aapfoto" src="img/aap.png" alt="aapfoto">
-    </div>
+        <div class="aap-container"> 
+            <img class="aapfoto" src="img/aap.png" alt="aapfoto">
+            
+            <div class="aap-tekst">
+                <h2>100% proefdiervrij</h2>
+                <span>Dat is waar wij voor gaan.</span>
+            </div>
+        </div>
         <div class="herotext">
        
         <p class="hero-label">VOOR EEN TOEKOMST ZONDER DIERPROEVEN</p> 
@@ -369,19 +374,19 @@
 
     <div class="contact-form">
 
-        <form action="#" method="post">
+        <form action="mailto:613509@edu.rocmn.nl" method="post" enctype="text/plain">
 
     <label for="naam">Naam</label><br>
-    <input type="text" id="naam" name="naam"><br><br>
+    <input type="text" id="naam" placeholder="Jouw voornaam" required><br><br>
 
     <label for="achternaam">Achternaam</label><br>
-    <input type="text" id="achternaam" name="achternaam"><br><br>
+    <input type="text" id="achternaam" placeholder="Jouw achternaam" required><br><br>
 
     <label for="e-mail">E-mailadres</label><br>
-    <input type="e-mail" id="e-mail" name="e-mail"><br><br>
+    <input type="email" id="e-mail" placeholder="Naam@voorbeeld.nl" required><br><br>
 
     <label for="bericht">Bericht</label><br>
-    <textarea id="bericht" name="bericht"></textarea><br><br>
+    <textarea id="bericht" placeholder="Stuur hier uw bericht" required></textarea><br><br>
 
     <input type="submit" value="Verstuur">
 
