@@ -206,7 +206,7 @@ body {
 .kaart p {
     font-size: 20px;
     font-weight: bold;
-    color: #B3B3B3;
+    color: #efefef;
 }
 
 .support-section {
@@ -238,7 +238,7 @@ body {
     margin-bottom: 25px;
     color: #e38541;
     font-weight: 700;
-    font-size: 25px;
+    font-size: 40px;
     text-transform: uppercase;
 }
 
@@ -286,6 +286,10 @@ body {
     font-weight: 700;
     color: #000;
     cursor: pointer;
+}
+
+.amount-buttons .ander-bedrag {
+    font-size: 15px;
 }
 
 .help-button {
@@ -352,7 +356,7 @@ body {
 }
 
 .nieuws {
-    background-image: url("img/jarrod-head.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url("img/jarrod-head.png");
     background-size: cover;
     background-position: center;
     min-height: 700px;
@@ -382,11 +386,13 @@ body {
 }
 
 .nieuws-kaart h3 {
+    color: #fff;
     font-size: 32px;
     margin-bottom: 30px;
 }
 
 .nieuws-kaart p {
+    color: #fff;
     font-size: 20px;
     line-height: 0.5;
 }
@@ -725,10 +731,12 @@ body {
     width: 400px;
     height: 500px;
     background: white;
-    padding: 30px;
+    padding: 10px;
+    padding-top: 30px;
     margin-top: 80px;
-    border: 2px solid #c3c3c3;
-    border-radius: 10px;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.10);
 }
 
 input, textarea {
