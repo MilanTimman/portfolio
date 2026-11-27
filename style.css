@@ -38,7 +38,7 @@ header {
 
 .home {
     position: relative;
-    height: 860px;
+    max-height: 100vh;
     overflow: hidden;
 
     background-image: url("img/eerste\ achtergrond.v4.png");
