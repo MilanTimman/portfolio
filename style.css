@@ -662,6 +662,7 @@ header {
 .tandwielen-container-links img,
 .tandwielen-container-rechts img,
 .tandwielen-container-lin2ks img {
+    display: block;
     height: 175px;
     width: auto;
 }
