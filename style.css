@@ -631,6 +631,7 @@ header {
 
 .tandwielen-container-links {
     position: absolute;
+    display: block;
     top: 47%;
     left: 70%;
     animation: rustigDraaien 15s linear infinite;
@@ -638,6 +639,7 @@ header {
 
 .tandwielen-container-rechts {
     position: absolute;
+    display: block;
     top: 60%;
     left: 30%;
     animation: rustigDraaien 10s linear infinite reverse;
@@ -645,6 +647,7 @@ header {
 
 .tandwielen-container-lin2ks {
     position: absolute;
+    display: block;
     top: 35%;
     left: 30%;
     animation: rustigDraaien 15s linear infinite reverse;
@@ -662,7 +665,6 @@ header {
 .tandwielen-container-links img,
 .tandwielen-container-rechts img,
 .tandwielen-container-lin2ks img {
-    display: block;
     height: 175px;
     width: auto;
 }
